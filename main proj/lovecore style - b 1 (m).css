@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar b {
+  padding: 7px 8px 7px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif; 
+  color: #818181;
+  display: block;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.main {
+  margin-left: 160px; 
+  padding: 10px; 
+}
+
+
+
+.music-player-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/music/m.jpg);
+  position: relative;
+  margin: 75px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 70px;
+}
+
+
+.music-player-box .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-player-box .track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/child.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.music-player-box .download-track { 
+  padding: 15px;
+  font-size: 24px;
+  background: white; /* Background color */
+  color:#3498; /* Text color */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+  margin-left: 15px;
+}
+
+.music-player-box .download-track:hover { 
+  background: white; 
+  transform: scale(1.1);
+}
+
+
+.music-player-box .playback-speed-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+
+.music-player-box label {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.music-player-box select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+
+
+
+.music-player-box .now-playing {
+  font-size: 1rem;
+}
+
+.music-player-box .track-name {
+  font-size: 2rem;
+}
+
+.music-player-box .track-artist {
+  font-size: 1.5rem;
+}
+
+
+.music-player-box .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.music-player-box .playpause-track,
+.music-player-box .prev-track,
+.music-player-box .next-track {
+  padding: 15px;
+  font-size: 24px;
+  background:white;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+  justify-content: center;
+}
+
+.music-player-box .playpause-track:hover,
+.music-player-box .prev-track:hover,
+.music-player-box .next-track:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+
+.music-player-box .slider_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-player-box .seek_slider,
+.music-player-box .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 100%; 
+  background: #ccc;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.music-player-box .seek_slider::-webkit-slider-thumb,
+.music-player-box .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.music-player-box .current-time,
+.music-player-box .total-duration {
+  font-size: 14px;
+  text-align: center; 
+  margin-top: 10px;
+}
+
+.music-player-box .seek_slider:hover,
+.music-player-box .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.music-player-box .seek_slider {
+  width: 100%;
+}
+
+.music-player-box .volume_slider {
+  width: 100%;
+}
+
+.music-player-box i.fa-play-circle,
+.music-player-box i.fa-pause-circle,
+.music-player-box i.fa-step-forward,
+.music-player-box i.fa-step-backward {
+  cursor: pointer;
+  font-size: 24px;
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+.music-player-box i.fa-play-circle:hover,
+.music-player-box i.fa-pause-circle:hover,
+.music-player-box i.fa-step-forward:hover,
+.music-player-box i.fa-step-backward:hover {
+  color: #2980b9;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lovecore style - b 2 (a).css">
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./img/Arts/a\ room.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Sidebar { position: fixed;
+            width: 200px;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            color: #818181;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px 50px 30px 5px;
+        }
+
+.sidebar b {
+  padding: 7px 8px 7px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif; 
+  color: #818181;
+  display: block;
+}
+
+.Sidebar a {
+text-decoration: none;
+font-size: 16px;
+margin: 10px 0;
+color: white;
+}
+
+.Sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
+.player {
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("img/m.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+.now-playing {
+    font-size: 1rem;
+}
+.track-name {
+    font-size: 3rem;
+}
+.track-artist {
+font-size: 1.5rem;
+        }
+.buttons {
+    justify-content: center;
+}
+    .playpause-track,
+    .prev-track,
+    .next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+.slider_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seek_slider,
+.volume_slider {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+height: 5%;
+background: black;
+opacity: 0.7;
+-webkit-transition: 0.2s;
+transition: opacity 0.2s;
+justify-content: center;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+-webkit-appearance: none; 
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: white;
+cursor: pointer;
+border-radius: 50%;
+justify-content: center;
+}
+.seek_slider:hover,
+.volume_slider:hover {
+opacity: 1.0;
+}
+.seek_slider {
+width: 60%;
+}
+
+.volume_slider {
+    width: 30%;
+
+}
+
+.current-time,
+.total-duration {
+    padding: 5px;
+}
+i.fa-volume-down,
+i.fa-volume-up {
+    justify-content: center;
+    padding: 5px;
+}
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+
+    <div class="Sidebar" id="leftMenu">
+        <div class="Sidebar" id="leftMenu">
+            <b> Lo-Vibe</b>
+          <a href="index.html" class="fa fa-fw fa-home"> Home</a>
+          <a href="lovecore - a 1 (m).html" class="fa fa-fw fa-heart"> Music</a>
+          <a href="lovecore - a 2 (a).html" class="fa fa-fw fa-heart"> Arts</a>
+          <a href="lovecore - a 3 (pe).html" class="fa fa-fw fa-heart"> Physical Education</a>
+          <a href="lovecore - a 4 (h).html" class="fa fa-fw fa-heart"> Health</a>
+          <a href="Privacy & policy.html" class="fa fa-fw fa-info"> Privacy & Policy</a>
+        </div>
+    </div>
+    
+    <div class="music-player-box">
+        <div class="player">
+            <div class="details">
+                <div class="now-playing">PLAYING x OF y</div>
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+                <div class="playback-speed-container">
+                    <label for="playbackSpeed">Playback Speed:</label>
+                    <select id="playbackSpeed" onchange="changePlaybackSpeed(this.value)">
+                      <option value="0.5">0.5x</option>
+                      <option value="0.75">0.75x</option>
+                      <option value="1" selected>1x (Normal)</option>
+                      <option value="1.5">1.5x</option>
+                      <option value="2">2x</option>
+                    </select>
+                  </div>
+            </div>
+    
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+    
+                <div class="playpause-track" onclick="togglePlayPause()">
+            <i class="fa fa-play-circle fa-5x play-button"></i>
+            <i class="fa fa-pause-circle fa-5x pause-button" style="display: none;"></i>
+                </div>
+    
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+    
+                <div class="download-track" onclick="downloadTrack()"> 
+                    <i class="fa fa-download fa-2x"></i>
+                </div>
+            </div>
+
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
+
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
+</div>
+
+    <script src="lovecore - 2 a.js"></script>
+</main>
+</body>
+
+</html>
