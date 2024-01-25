@@ -23,16 +23,16 @@ curr_track.id = 'audioPlayer';
 
 let track_list = [
     {
-        name: "Love me",
-        artist: "Eric Gudlow beats",
-        image: "img/beer.jpg",
-        path: "audio/(bgsound) Love me.mp3",
+        name: "Good morning world",
+        artist: "Kijugo",
+        image: "img/Health/Pill.gif",
+        path: "audio/Health/Goodmorningworld-(Drstoneost) lofi.mp3",
     },
     {
-        name: "Undertale Vinyl",
-        artist: "Toby Fox",
-        image: "img/jazzhop.jpg",
-        path: "audio/UNDERTALE but its on vinyl and makes me nostalgic.mp3"
+        name: "Rose",
+        artist: "Lukrembo",
+        image: "img/Health/flower.gif",
+        path: "audio/Health/lukrembo - rose Health.mp3"
     },
 ];
 
