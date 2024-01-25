@@ -53,6 +53,7 @@
   align-items: center;
   justify-content: center;
   background-image: url(./img/pe.jpg);
+  position: relative;
   margin: 75px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -94,6 +95,7 @@
   transform: scale(1.1);
 }
 
+
 .music-player-box .playback-speed-container {
   margin-top: 15px;
   display: flex;
@@ -116,6 +118,9 @@
   color: #333;
   cursor: pointer;
 }
+
+
+
 
 .music-player-box .now-playing {
   font-size: 1rem;
