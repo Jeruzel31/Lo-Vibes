@@ -81,18 +81,13 @@
 .music-player-box .download-track { 
   padding: 15px;
   font-size: 24px;
-  background: white; /* Background color */
-  color:#3498; /* Text color */
+  background: white; 
+  color:#3498db; 
   border: none;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s, transform 0.2s;
   margin-left: 15px;
-}
-
-.music-player-box .download-track:hover { 
-  background: white; 
-  transform: scale(1.1);
 }
 
 
@@ -157,7 +152,8 @@
 
 .music-player-box .playpause-track:hover,
 .music-player-box .prev-track:hover,
-.music-player-box .next-track:hover {
+.music-player-box .next-track:hover,
+.music-player-box .download-track:hover {
   background: white;
   transform: scale(1.1);
 }
@@ -226,6 +222,7 @@
 .music-player-box i.fa-play-circle:hover,
 .music-player-box i.fa-pause-circle:hover,
 .music-player-box i.fa-step-forward:hover,
-.music-player-box i.fa-step-backward:hover {
+.music-player-box i.fa-step-backward:hover,
+.music-player-box i.fa-download-track:hover {
   color: #2980b9;
 }
