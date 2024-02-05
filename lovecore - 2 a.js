@@ -36,6 +36,12 @@ let track_list = [
         image: "img/Arts/artsocean.gif",
         path: "audio/Arts/Smartface - Bright Oceans arts.mp3"
     },
+    {
+        name: "Dream with tea",
+        artist: "Lukrembo",
+        image: "img/Arts/faceless.gif",
+        path: "audio/Arts/artslukrembo - dream with tea.mp3"
+    },
 ];
 
 

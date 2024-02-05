@@ -37,6 +37,12 @@ let track_list = [
         image: "img/PE/driving.gif",
         path: "audio/PE/Kind Puppy, RejSende - Long Road pe.mp3"
     },
+    {
+        name: "Aces",
+        artist: "DKJ",
+        image: "img/PE/card.gif",
+        path: "audio/PE/peAces-dkj.mp3"
+    },
 ];
 
 

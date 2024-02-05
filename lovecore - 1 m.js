@@ -37,6 +37,11 @@ let track_list = [
         artist: "Toby Fox",
         image: "img/Music/musicundertale.gif",
         path: "audio/Music/UNDERTALE nostalgic.ogg"
+    },{
+        name: "Onion",
+        artist: "Lukrembo",
+        image: "img/Music/onion.gif",
+        path: "audio/Music/Music“onion”lukrembo.mp3"
     },
 ];
 

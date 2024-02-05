@@ -34,6 +34,12 @@ let track_list = [
         image: "img/Health/flower.gif",
         path: "audio/Health/lukrembo - rose Health.mp3"
     },
+    {
+        name: "Better together",
+        artist: "MOOOOHEHE",
+        image: "img/Health/hold.gif",
+        path: "audio/Health/healthBetterTogether-MOOOOHEHE.mp3"
+    },
 ];
 
 
@@ -170,24 +176,3 @@ function togglePlayPause() {
 
 playpause_btn.addEventListener('click', togglePlayPause);
 
-// sw.js
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-      caches.open('my-cache').then((cache) => {
-        return cache.addAll([
-          // Add your audio files to be cached
-          'path/to/audio/file1.mp3',
-          'path/to/audio/file2.mp3',
-          // ...
-        ]);
-      })
-    );
-  });
-  
-  self.addEventListener('fetch', (event) => {
-    event.respondWith(
-      caches.match(event.request).then((response) => {
-        return response || fetch(event.request);
-      })
-    );
-  });
