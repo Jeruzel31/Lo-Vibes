@@ -51,7 +51,7 @@ let track_list = [
     {
         name: "Morning Sun",
         artist: "Yondo, J Cole",
-        image: "img/Arts/morningsun.gif",
+        image: "img/Arts/sun.gif",
         path: "audio/Arts/artsFree J Cole Type Beat - _Morning Sun_.mp3"
     },
 ];
