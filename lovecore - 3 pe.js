@@ -43,6 +43,18 @@ let track_list = [
         image: "img/PE/card.gif",
         path: "audio/PE/peAces-dkj.mp3"
     },
+    {
+        name: "Chill phonk",
+        artist: "CODEINE",
+        image: "img/PE/skull.gif",
+        path: "audio/PE/pe CHILL PHONK TYPE BEAT - _CODEINE_.mp3"
+    },
+    {
+        name: "Waiting",
+        artist: "Lukrembo",
+        image: "img/PE/waiting.gif",
+        path: "audio/PE/Lukrembo Year Mix 2019 _ Royalty free Music.mp3"
+    },
 ];
 
 

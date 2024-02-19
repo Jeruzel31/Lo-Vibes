@@ -1,4 +1,4 @@
-// pgoi ko-jeru//
+
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
@@ -37,11 +37,24 @@ let track_list = [
         artist: "Toby Fox",
         image: "img/Music/musicundertale.gif",
         path: "audio/Music/UNDERTALE nostalgic.ogg"
-    },{
+    },
+    {
         name: "Onion",
         artist: "Lukrembo",
         image: "img/Music/onion.gif",
         path: "audio/Music/Music“onion”lukrembo.mp3"
+    },
+    {
+        name: "In The Blue",
+        artist: "Joji x D4vid x Piano Ballad",
+        image: "img/Music/musictheblue.gif",
+        path: "audio/Music/music(FREE) Joji x D4vd x Piano ballad Type Beat - _in the blue_.mp3"
+    },
+    {
+        name: "Jay",
+        artist: "Lukrembo",
+        image: "img/Music/jay.gif",
+        path: "audio/Music/lukrembo - jay Music.mp3"
     },
 ];
 

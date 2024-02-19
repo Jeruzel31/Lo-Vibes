@@ -55,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(./img/Arts/a.jpg);
+  background-image: url(./img/Arts/trackplayer.gif);
   position: relative;
   margin: 75px;
   border-radius: 10px;
@@ -129,10 +129,12 @@
 
 .music-player-box .track-name {
   font-size: 2rem;
+  color: white;
 }
 
 .music-player-box .track-artist {
   font-size: 1.5rem;
+  color: white;
 }
 
 

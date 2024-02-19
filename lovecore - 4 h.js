@@ -23,9 +23,9 @@ curr_track.id = 'audioPlayer';
 
 let track_list = [
     {
-        name: "Good morning world",
+        name: "Good Morning World",
         artist: "Kijugo",
-        image: "img/Health/Pill.gif",
+        image: "img/Health/gmw.gif",
         path: "audio/Health/Goodmorningworld-(Drstoneost) lofi.mp3",
     },
     {
@@ -35,10 +35,22 @@ let track_list = [
         path: "audio/Health/lukrembo - rose Health.mp3"
     },
     {
+        name: "Unwind",
+        artist: "Neotic",
+        image: "img/Health/unwind.gif",
+        path: "audio/Health/unwind health.mp3"
+    },
+    {
         name: "Better together",
         artist: "MOOOOHEHE",
-        image: "img/Health/hold.gif",
+        image: "img/Health/bt.gif",
         path: "audio/Health/healthBetterTogether-MOOOOHEHE.mp3"
+    },
+    {
+        name: "Hopeless romantic",
+        artist: "Yusei",
+        image: "img/Health/HP.gif",
+        path: "audio/Health/(FREE) Lofi Type Beat - Hopeless Romantic (prod. Yusei).mp3"
     },
 ];
 

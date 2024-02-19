@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+/* mobile view */
+.banner {
+background-image: url(./img/mainmobile.jpg);
+width: 100%; 
+height: 320px; 
+background-size: cover;
+background-position: center;
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar b {
+  padding: 7px 8px 7px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: roboto;
+  color: #818181;
+  display: block;
+}
+
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* Styles for mobile view */
+@media only screen and (max-width: 600px) {
+header {
+  padding: 10px;
+}
+
+.content {
+  margin: 10px;
+}
+
+footer {
+  padding: 10px;
+}
+}
+
+/*-----------porfolio----*/
+#portfolio{
+padding: 50px 0;
+}
+.work-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+.work{
+border-radius: 10p;
+position: relative;
+overflow: hidden;
+}
+.work img{
+width: 100%;
+border-radius: 10px;
+display: block;
+transition: transform 0.5s;
+}
+.layer{
+width: 100%;
+height: 0%;
+background: linear-gradient( rgba(0,0,0,0.6),purple, blue);
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 50px;
+text-align: center;
+font-size: 12px;
+transition: height 0.5s;
+}
+.layer h3{
+font-weight: 500;
+margin-bottom: 20px;
+}
+.layer a{
+margin-top: 20px;
+color: #ff004f;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background: #fff;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+text-align: center;
+}
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+height: 100%;
+}

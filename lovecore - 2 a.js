@@ -25,22 +25,34 @@ curr_track.id = 'audioPlayer';
 
 let track_list = [
     {
-        name: "Bikes at the pier",
+        name: "Bikes At The Pier",
         artist: "NOGYMX",
         image: "img/Arts/Artsriding.gif",
         path: "audio/Arts/NOGYMX - bikes at the pier arts.mp3",
     },
     {
-        name: "Bright oceans",
+        name: "Bright Oceans",
         artist: "Smartface",
         image: "img/Arts/artsocean.gif",
         path: "audio/Arts/Smartface - Bright Oceans arts.mp3"
     },
     {
-        name: "Dream with tea",
+        name: "Dream With Tea",
         artist: "Lukrembo",
         image: "img/Arts/faceless.gif",
         path: "audio/Arts/artslukrembo - dream with tea.mp3"
+    },
+    {
+        name: "Waiting For You",
+        artist: "Eric Godlow Beats",
+        image: "img/Arts/waiting.gif",
+        path: "audio/Arts/artsEricgudlowWaitforYou.mp3"
+    },
+    {
+        name: "Morning Sun",
+        artist: "Yondo, J Cole",
+        image: "img/Arts/morningsun.gif",
+        path: "audio/Arts/artsFree J Cole Type Beat - _Morning Sun_.mp3"
     },
 ];
 
