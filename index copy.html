@@ -10,87 +10,15 @@
 </head>
 
 <style>
- .body {
-            font-family: Arial, sans-serif;
-            background-image: url(img/miscellanous/city.gif);
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
- }
-
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
-}
-.survey-box {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1001;
-  text-align: center;
-}
-.question {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.buttons button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
-.buttons button.yes {
-  background-color: #4CAF50;
-  color: white;
-}
-.buttons button.no {
-  background-color: #f44336;
-  color: white;
+  body {
+width: 100%;
+height: 100vh;
+background-image: url(img/miscellanous/city.gif);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
 </style>
-</head>
-<body>
-<div class="overlay" id="overlay">
-<div class="survey-box">
-  <div class="question">Are you 13 yrs old or older to be using this website?</div>
-  <div class="buttons">
-      <button class="yes" onclick="submitAnswer(true)"><a href="index copy.html">Yes</a></button>
-      <button class="no" onclick="submitAnswer(false)"><a href="No.html">No</a></button>
-  </div>
-</div>
-</div>
-
-<script>
-function openSurvey() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function submitAnswer(answer) {
-  console.log("User answered:", answer ? "Yes" : "No");
-  document.getElementById("overlay").style.display = "none";
-  window.location.href = "main_website.html";
-}
-</script>
 
 <head>
   <style>
@@ -189,14 +117,7 @@ b {
     </div>
   </div>
 </div>
-
-<script>
-  // Open the survey on page load
-  window.onload = function() {
-      openSurvey();
-  };
-</script>
 </body>
 
 
-  <main></main>
+  <main></main> 

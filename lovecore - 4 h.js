@@ -188,3 +188,20 @@ function togglePlayPause() {
 
 playpause_btn.addEventListener('click', togglePlayPause);
 
+document.addEventListener("DOMContentLoaded", function() {
+    var dropdownBtn = document.querySelector(".dropbtn");
+    var dropdownContent = document.querySelector(".dropdown-content");
+  
+    dropdownBtn.addEventListener("click", function() {
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+    document.addEventListener("click", function(event) {
+      if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+        dropdownContent.style.display = "none";
+      }
+    });
+  });
