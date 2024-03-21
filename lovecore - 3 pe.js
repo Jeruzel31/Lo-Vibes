@@ -20,40 +20,39 @@ let isPlaying = false;
 let updateTimer;
 
 
-
 let curr_track = document.createElement('audio');
 curr_track.id = 'audioPlayer';
 
 let track_list = [
     {
-        name: "Dream",
-        artist: "New doors",
-        image: "img/PE/dreaming.gif",
-        path: "audio/PE/Few dreams New doors pe.mp3",
+        name: "Bikes At The Pier",
+        artist: "NOGYMX",
+        image: "img/PE/Artsriding.gif",
+        path: "audio/PE/NOGYMX - bikes at the pier arts.mp3",
     },
     {
-        name: "Longride",
-        artist: "Kind puppy, RejSende",
-        image: "img/PE/driving.gif",
-        path: "audio/PE/Kind Puppy, RejSende - Long Road pe.mp3"
+        name: "Bright Oceans",
+        artist: "Smartface",
+        image: "img/PE/artsocean.gif",
+        path: "audio/PE/Smartface - Bright Oceans arts.mp3"
     },
     {
-        name: "Aces",
-        artist: "DKJ",
-        image: "img/PE/card.gif",
-        path: "audio/PE/peAces-dkj.mp3"
-    },
-    {
-        name: "Chill phonk",
-        artist: "CODEINE",
-        image: "img/PE/skull.gif",
-        path: "audio/PE/pe CHILL PHONK TYPE BEAT - _CODEINE_.mp3"
-    },
-    {
-        name: "Waiting",
+        name: "Dream With Tea",
         artist: "Lukrembo",
+        image: "img/PE/faceless.gif",
+        path: "audio/PE/artslukrembo - dream with tea.mp3"
+    },
+    {
+        name: "Waiting For You",
+        artist: "Eric Godlow Beats",
         image: "img/PE/waiting.gif",
-        path: "audio/PE/Lukrembo Year Mix 2019 _ Royalty free Music.mp3"
+        path: "audio/PE/artsEricgudlowWaitforYou.mp3"
+    },
+    {
+        name: "Morning Sun",
+        artist: "Yondo, J Cole",
+        image: "img/PE/sun.gif",
+        path: "audio/PE/artsFree J Cole Type Beat - _Morning Sun_.mp3"
     },
 ];
 
@@ -125,6 +124,7 @@ function prevTrack() {
     console.log("Loading track: " + track_index); // Add this line for debugging
 }
 
+
 function downloadTrack() { /*ito*/
     const link = document.createElement('a');
     link.href = track_list[track_index].path;
@@ -133,6 +133,7 @@ function downloadTrack() { /*ito*/
     link.click();
     document.body.removeChild(link);
 }
+
 
 function seekUpdate() {
     let seekPosition = 0;
@@ -164,7 +165,6 @@ function changePlaybackSpeed(speed) {
     curr_track.playbackRate = parseFloat(speed);
   }
 
-  
 loadTrack(track_index);
 playpause_btn.addEventListener('click', playpauseTrack);
 

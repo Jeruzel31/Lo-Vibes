@@ -1,4 +1,4 @@
-// pgoi ko-jeru//
+ // pgoi ko-jeru//
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
@@ -20,39 +20,40 @@ let isPlaying = false;
 let updateTimer;
 
 
+
 let curr_track = document.createElement('audio');
 curr_track.id = 'audioPlayer';
 
 let track_list = [
     {
-        name: "Bikes At The Pier",
-        artist: "NOGYMX",
-        image: "img/Arts/Artsriding.gif",
-        path: "audio/Arts/NOGYMX - bikes at the pier arts.mp3",
+        name: "Dream",
+        artist: "New doors",
+        image: "img/Arts/dreaming.gif",
+        path: "audio/Arts/Few dreams New doors pe.mp3",
     },
     {
-        name: "Bright Oceans",
-        artist: "Smartface",
-        image: "img/Arts/artsocean.gif",
-        path: "audio/Arts/Smartface - Bright Oceans arts.mp3"
+        name: "Longride",
+        artist: "Kind puppy, RejSende",
+        image: "img/Arts/driving.gif",
+        path: "audio/Arts/Kind Puppy, RejSende - Long Road pe.mp3"
     },
     {
-        name: "Dream With Tea",
+        name: "Aces",
+        artist: "DKJ",
+        image: "img/Arts/card.gif",
+        path: "audio/Arts/peAces-dkj.mp3"
+    },
+    {
+        name: "Chill phonk",
+        artist: "CODEINE",
+        image: "img/Arts/skull.gif",
+        path: "audio/Arts/pe CHILL PHONK TYPE BEAT - _CODEINE_.mp3"
+    },
+    {
+        name: "Waiting",
         artist: "Lukrembo",
-        image: "img/Arts/faceless.gif",
-        path: "audio/Arts/artslukrembo - dream with tea.mp3"
-    },
-    {
-        name: "Waiting For You",
-        artist: "Eric Godlow Beats",
         image: "img/Arts/waiting.gif",
-        path: "audio/Arts/artsEricgudlowWaitforYou.mp3"
-    },
-    {
-        name: "Morning Sun",
-        artist: "Yondo, J Cole",
-        image: "img/Arts/sun.gif",
-        path: "audio/Arts/artsFree J Cole Type Beat - _Morning Sun_.mp3"
+        path: "audio/Arts/Lukrembo Year Mix 2019 _ Royalty free Music.mp3"
     },
 ];
 
@@ -124,7 +125,6 @@ function prevTrack() {
     console.log("Loading track: " + track_index); // Add this line for debugging
 }
 
-
 function downloadTrack() { /*ito*/
     const link = document.createElement('a');
     link.href = track_list[track_index].path;
@@ -133,7 +133,6 @@ function downloadTrack() { /*ito*/
     link.click();
     document.body.removeChild(link);
 }
-
 
 function seekUpdate() {
     let seekPosition = 0;
@@ -165,6 +164,7 @@ function changePlaybackSpeed(speed) {
     curr_track.playbackRate = parseFloat(speed);
   }
 
+  
 loadTrack(track_index);
 playpause_btn.addEventListener('click', playpauseTrack);
 
