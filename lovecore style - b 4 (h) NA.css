@@ -51,6 +51,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url(./img/Health/trackplayer.gif);
   position: relative;
   margin: 75px;
   border-radius: 10px;
@@ -79,13 +80,18 @@
 .music-player-box .download-track { 
   padding: 15px;
   font-size: 24px;
-  background: white; 
-  color:#3498db; 
+  background:white; /* Background color */
+  color: #3498db; /* Text color */
   border: none;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s, transform 0.2s;
   margin-left: 15px;
+}
+
+.music-player-box .download-track:hover { /*ito*/
+  background: white; 
+  transform: scale(1.1);
 }
 
 
@@ -111,8 +117,6 @@
   color: #333;
   cursor: pointer;
 }
-
-
 
 
 .music-player-box .now-playing {
@@ -220,7 +224,6 @@
 .music-player-box i.fa-play-circle:hover,
 .music-player-box i.fa-pause-circle:hover,
 .music-player-box i.fa-step-forward:hover,
-.music-player-box i.fa-step-backward:hover,
-.music-player-box i.fa-download-track:hover {
+.music-player-box i.fa-step-backward:hover {
   color: #2980b9;
 }
